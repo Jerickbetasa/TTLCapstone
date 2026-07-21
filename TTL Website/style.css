@@ -1,0 +1,296 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("pnubuilding.jpg");
+    background-size:100% 50%;
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    background-attachment: scroll;
+}
+@media (max-width: 1000px) {
+
+    .welcome {
+        width: 90%;
+        left: 5%;
+    }
+
+    #TPROFED {
+        font-size: 60px;
+    }
+
+    #Subject1 {
+        font-size: 35px;
+    }
+
+}
+
+* {
+    text-decoration: none;
+}
+
+.nav1 {
+    background: transparent;
+    font-family: "Lexend Deca", sans-serif;
+    padding-right: 15px;
+    padding-left: 15px;
+    min-height: 75px;
+}
+
+.navdiv {
+    position: fixed;
+    top: -35px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1000; /* Keeps it above other elements */
+    padding:20px;
+    white-space: nowrap;
+}
+
+.but1 {
+    list-style: none;
+    display: inline-block;
+}
+
+.but1 .a1 {
+    color: black;
+    font-size: 21px;
+    font-weight: bold;
+    margin-right: 25px;
+    background-color: rgb(44, 44, 94, .0);
+    border-radius: 20px;
+    padding: 40px 20px;   /* Keep a fixed size */
+    display: inline-block; /* Required for transform to work properly */
+    transition: transform 0.15s ease, background-color 0.1s ease, box-shadow 0.1s ease;
+}
+.but1 .a1:hover {
+    color: white;
+    background: rgb(52, 52, 230);
+    box-shadow: 0px 0px 50px rgb(252, 252, 252);
+    transform: scale(1.15); /* 15% larger */
+}
+.logo a {
+    font-size: 35px;
+    color: whitesmoke;
+    padding: 10px 50px;
+    background-color: rgb(72, 133, 133);
+    border-radius: 25px;
+    white-space: nowrap;
+}
+#background {
+    /*width: 100%;
+    max-width: 1500px;*/
+    width: 100%;
+    max-width: 1500px;
+    height: auto;
+}
+
+.content {
+    position: relative;
+    min-height: 2000px;
+}
+
+#TPROFED {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, -100px);
+    font-size: clamp(50px, 6vw, 100px);
+    font-weight:700;
+    font-family: "Lexend Deca";
+    white-space: nowrap;
+}
+#Subject1 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+
+    font-family: "Lexend Deca";
+    font-size: clamp(24px, 3vw, 50px);
+    color: rgb(255, 255, 255);
+    background-color: rgb(196, 130, 32, 0.9);
+    border-radius: 35px;
+    padding: 10px 30px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+.welcome {
+    position: absolute;
+    left: 8%;
+    top: 400px;
+
+    width: min(650px, 80%);
+    height: auto;
+    min-height: 430px;
+    background-color: rgb(255, 228, 196, 0.8);
+    padding:10px 70px;
+    font-family: "Lexend Deca";
+    border-radius:20px;
+    transform: scale(1.00);
+    transition: transform 0.15s ease;
+    
+}
+.welcome:hover {
+    /*boxss-shadow:0px 0px 50px rgb(255, 255, 255);*/
+    transform:scale(1.05);
+    opacity:1.0;
+    box-shadow: 0px 0px 50px rgb(241, 212, 158);
+    background-color: rgb(255, 228, 196);
+}
+.welheds {
+    font-size: 300%;
+    font-family: "Lexend Deca";
+    position:absolute;
+    white-space: nowrap;
+}
+.welpar {
+    padding-bottom:50px;
+    position:absolute;
+    top:130px;
+    width:650px;
+    font-size:18px;
+}
+.cat {
+    font-weight: bolder;
+    margin:0 auto;
+    font-family: "Lexend Deca";
+    font-size:300%;
+    position: absolute;
+    top: 1150px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin:0px;
+    white-space: nowrap;
+}
+#cat {
+    padding:30px;
+}
+.cat1 {
+    font-family: "Lexend Deca";
+    font-size: clamp(18px, 2vw, 32px);
+
+    width: 100%;
+    max-width: 1500px;
+
+    margin: 0 auto;
+
+    text-align: center;
+    line-height: 1.6;
+
+    position:relative;
+    top:-730px;
+}
+.but {
+    list-style: none;
+    display: inline-block;
+    margin-left:20px;
+
+}
+.buttons {
+    position: absolute;
+    top: 1750px;
+    left: -70px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1000; /* Keeps it above other elements */
+    padding:20px;
+    white-space: nowrap;
+    margin-left:20px;
+}
+.but2 {
+    list-style: none;
+    display: inline-block;
+}
+.but::-webkit-scrollbar {
+    display: none;
+}
+.but2 .a2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lexend Deca";
+    width: 460px;
+    height: 600px;
+
+    background: rgb(44, 44, 94);
+    border-radius: 20px;
+
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+
+    transition: transform 10s ease;
+    animation:spin 3s scroll;
+}
+
+@keyframes spin {
+    0% {transform:0px;}
+    50% {transform:50px;}
+    100% {transform:100px;}
+    50% {transform:50px;}
+    0% {transform:0px;}
+}
+.but2 .a2:hover {
+    transform: scale(1.08);
+    background-color: rgb(52, 52, 230, 1.0);
+    box-shadow: 0px 0px 50px rgb(182, 174, 240);
+}
+.a2.catalog{
+    background-image:
+        linear-gradient(rgba(52, 52, 230, 0.2), rgba(0, 0, 0, 0.2)),
+        url("modules.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center 600px;
+        transition:background .3s ease-in-out;
+}
+.a2.catalog:hover{
+    background-image:
+        linear-gradient(rgba(52, 52, 230, .8), rgba(52, 52, 230, .8)),
+        url("modules.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center 0px;
+}
+.a2.activities {
+    background-image:
+        linear-gradient(rgba(52, 52, 230, 0.2), rgba(52, 52, 230, 0.2)),
+        url("activities.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center 600px;
+        transition: background .3s ease-in-out;
+}
+.a2.activities:hover {
+    background-image:
+        linear-gradient(rgba(52, 52, 230, .8), rgba(52, 52, 230, .8)),
+        url("activities.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center 0px;
+}
+.a2.games {
+    background-image:
+        linear-gradient(rgba(52, 52, 230, 0.2), rgba(52, 52, 230, 0.2)),
+        url("games.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center 600px;
+        transition: background .3s ease-in-out;
+}
+.a2.games:hover {
+    background-image:
+        linear-gradient(rgba(52, 52, 230, .8), rgba(52, 52, 230, .8)),
+        url("games.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center 0px;
+}
